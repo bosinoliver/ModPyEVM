@@ -34,6 +34,7 @@ class Magnify:
         writer.release()
 
     def do_magnify(self) -> None:
+        print("yo dfdjfdf dff")
         tensor, fps = self.load_video()
         video_tensor = self._magnify_impl(tensor, fps)
         self.save_video(video_tensor)
